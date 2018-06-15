@@ -30,6 +30,8 @@
         command: ["redis-server", "--appendonly", "yes"]
         state: started
         restart_policy: always
+        networks:
+          - ship
         volumes:
           - "{{redis_data_dir}}:/data"
         ports:
@@ -53,6 +55,8 @@
         command: mongod
         state: started
         restart_policy: always
+        networks:
+          - ship
         volumes:
           - "{{mongo_data_dir}}:/data/db"
         ports:

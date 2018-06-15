@@ -26,8 +26,8 @@
         restart_policy: always
         recreate: yes
         restart: yes
-        links:
-          - mongo
+        networks:
+          - ship
         published_ports:
           - "127.0.0.1:{{ item }}:3001"
         env:
@@ -48,8 +48,8 @@
         restart_policy: always
         recreate: yes
         restart: yes
-        links:
-          - redis
+        networks:
+          - ship
         published_ports:
           - "127.0.0.1:{{ item }}:3002"
         env:
@@ -70,8 +70,16 @@
         restart_policy: always
         recreate: yes
         restart: yes
+        networks:
+          - ship
         published_ports:
           - "127.0.0.1:{{ item }}:3000"
         env:
           NODE_ENV: "{{ env }}"
       with_items: "{{ landing_ports }}"
+
+    - name: Add cronjob to remove unnesessary containers, networks, images
+      cron:
+        name: docker_prune
+        special_time: monthly
+        job: sudo docker system prune -f
