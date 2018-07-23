@@ -15,7 +15,7 @@ module.exports = {
     audience: 'ship.staging',
     issuer: 'ship.staging',
   },
-  apiUrl: 'http://ship-api.paralect.com',
-  webUrl: 'http://ship-app.paralect.com',
-  landingUrl: 'http://ship-demo.paralect.com',
+  apiUrl: 'https://ship-api.kaigorodova.design',
+  webUrl: 'https://ship-app.kaigorodova.design',
+  landingUrl: 'https://ship-demo.kaigorodova.design',
 };

@@ -39,6 +39,7 @@ module.exports = async (app) => {
   }
 
   app.keys = [config.session.secret]; // eslint-disable-line
+
   app.use(session({
     store: redisStore,
     ttl: config.session.ttl,

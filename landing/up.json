@@ -1,0 +1,14 @@
+{
+    "name": "landing",
+    "lambda": {
+      "memory": 1536
+    },
+    "stages": {
+      "production": {
+          "domain": "ship-demo.kaigorodova.design"
+      }
+    },
+    "environment": {
+        "NODE_ENV": "production"
+    }
+}

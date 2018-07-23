@@ -10,7 +10,7 @@
 [![Follow](https://img.shields.io/twitter/follow/paralect.svg?style=social&label=Follow)](https://twitter.com/paralect)
 [![Tweet](https://img.shields.io/twitter/url/https/github.com/paralect/ship.svg?style=social)](https://twitter.com/intent/tweet?text=I%27m%20building%20my%20next%20product%20with%20Ship%20%F0%9F%9A%80.%20Check%20it%20out:%20https://github.com/paralect/ship)
 
-A toolkit for makers to ship better products faster 🚀. 
+A toolkit for makers to ship better serverless products faster 🚀. 
 
 [Ship](https://github.com/paralect/ship) is a tool which help you setup your new product in matter of minutes. Ship is based on Stack. [Stack](https://github.com/paralect/stack) is an number of open-source components, resulted from years of hard work on a number of awesome products. We carefully select, document and share our production-ready knowledge with you. 
 

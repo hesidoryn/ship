@@ -4,18 +4,14 @@
 
 1. Change `hosts/staging` to match you staging server ip address
 2. Change `api_domain,web_domain,landing_domain` domains in the `vars/main.yml`
-3. Change name of the docker images in the `deploy-app.yml` to match yours. e.x.: `paralect/ship-api` to `company/yourProduct-api`
 
 ### Setup commands
 
-1. Use `./bin/setup-server.sh` for one time server configuration. That installs Docker, MongoDb and Nginx.
-2. Use `./bin/setup-nginx.sh -i ./hosts/staging --extra-vars "env=staging"` for the first time and after nginx config changes to copy nginx template to the server.
+1. Use `./bin/setup-server.sh` for one time server configuration. That installs Docker, MongoDb and Nginx
 
 ### Manual deployment
 
-1. Copy/paste `vars/credentials-template.yml` as `credentials.yml` (it's in .gitignore to keep you DockerHub credentials out of the repo)
-2. Add your DockerHub credentials into `credentials.yml`
-3. Manually run `./bin/deploy-staging.sh --extra-vars docker_tag=latest`. Change tag as needed.
+1. Manually run `./bin/deploy-app.sh`
 
 
 ### Deployment with Drone CI

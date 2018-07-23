@@ -1,0 +1,14 @@
+{
+    "name": "api",
+    "lambda": {
+        "memory": 1536
+    },
+    "stages": {
+        "production": {
+            "domain": "ship-api.kaigorodova.design"
+        }
+    },
+    "environment": {
+        "NODE_ENV": "production"
+    }
+}

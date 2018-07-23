@@ -1,0 +1,14 @@
+{
+    "name": "web",
+    "lambda": {
+      "memory": 1536
+    },
+    "stages": {
+      "production": {
+          "domain": "ship-app.kaigorodova.design"
+      }
+    },
+    "environment": {
+        "NODE_ENV": "production"
+    }
+}

@@ -1,4 +1,4 @@
 node_modules
-src/client/static/main.*
-src/client/static/index.html
-src/client/static/*.map
+package-lock.json
+src/client/static/*
+production.js

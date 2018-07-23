@@ -13,7 +13,7 @@
     "paralect"
   ],
   "scripts": {
-    "build-client": "webpack -p --config src/client/webpack.config.js",
+    "build": "webpack -p --config src/client/webpack.config.js; npm prune --production",
     "start": "node src/server/app.js",
     "test": "run-s test:**",
     "test:server": "eslint ./src/server",
