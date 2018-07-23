@@ -1,5 +1,8 @@
 ## Getting Started
 
+### Pre-requisites
+1. Install [apex/up](https://up.docs.apex.sh)
+
 ### Update project specific variables
 
 1. Change `hosts/staging` to match you staging server ip address
